@@ -4,59 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>TravelLiz</title>
+    <title>Travel with Liz</title>
   </head>
   <body>
-    <nav>
-      <!-- nav bar will contain logo, anchors to other parts of the page -->
-      <ul class="navbar">
-        <li class="navbar-item" id="logo"><h3>TravelLiz</h3></li>
-        <li class="navbar-item"><a href="#about">about</a></li>
-        <li class="navbar-item">blog</li>
-        <li class="navbar-item">contact</li>
-      </ul>
-    </nav>
+    <header>
+      <nav>
+        <h3 id="logo">TL</h3>
+        <ul>
+          <li>
+            <a href="#blog">Blog</a>
+          </li>
+          <li>
+            <a href="#about">About Me</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="header-heading"></h1>
+      <h2 class="header-subheading"></h2>
+    </header>
     <main>
-      <h1 class="main-heading">My Travel Blog</h1>
-      <section class="posts">
-        <article
-          class="card"
-          style="background-image: url(./images/cape-town.jpg)"
-        >
-          <div class="card-text">
-            <h2 class="location">Traveling &amp; eating in bla bla</h2>
-            <h3 class="year">2019</h3>
-          </div>
-        </article>
-        <article
-          class="card"
-          style="background-image: url(./images/vianden.jpg)"
-        >
-          <div class="card-text">
-            <h2 class="location">Vianden<br />Luxembourg</h2>
-            <h3 class="year">2022</h3>
-          </div>
-        </article>
-        <article
-          class="card"
-          style="background-image: url(./images/vinyard.jpg)"
-        >
-          <div class="card-text">
-            <h2 class="location">Champagne<br />France</h2>
-            <h3 class="year">2022</h3>
-          </div>
-        </article>
-        <!-- <article
-          class="card"
-          style="background-image: url(./images/vinyard.jpg)"
-        >
-          <div class="card-text">
-            <h2 class="location">Champagne<br />France</h2>
-            <h3 class="year">2022</h3>
-          </div>
-        </article> -->
+      <section class="posts" id="blog">
+        <article class="card"></article>
+        <article class="card"></article>
+        <article class="card"></article>
+        <article class="card"></article>
+        <article class="card"></article>
+        <article class="card"></article>
       </section>
+      <section class="about-me" id="about"></section>
+      <section class="contact-me" id="contact"></section>
     </main>
     <footer>
       <p>&copy; Elizabeth Czarny 2022 for Masterschool</p>
