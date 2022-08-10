@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/58a488c3c5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styletwo.css" />
     <title>Travel with Liz</title>
   </head>
   <body>
     <header>
       <nav>
         <h3 id="logo">TL</h3>
-        <ul>
+        <ul class="navbar">
           <li>
             <a href="#blog">Blog</a>
           </li>
@@ -18,23 +23,121 @@
             <a href="#about">About Me</a>
           </li>
           <li>
-            <a href="">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
+        <button class="btn btn-secondary">Sign Up</button>
       </nav>
-      <h1 class="header-heading"></h1>
-      <h2 class="header-subheading"></h2>
+      <h1 class="header-heading">
+        Travel
+        <span>with</span>
+        Liz
+      </h1>
+      <h2 class="header-subheading">Explore the world with me</h2>
     </header>
     <main>
       <section class="posts" id="blog">
-        <article class="card"></article>
-        <article class="card"></article>
-        <article class="card"></article>
-        <article class="card"></article>
-        <article class="card"></article>
-        <article class="card"></article>
+        <article class="card" id="vianden">
+          <h2 class="main-latest">My Latest trip</h2>
+          <img
+            class="card-image"
+            src="/images/vianden-small.jpg"
+            srcset="
+              /images/vianden-small.jpg  320w,
+              /images/vianden-medium.jpg 800w
+            "
+            alt="the vianden castle"
+          />
+          <h3 class="location">Vianden, Luxembourg</h3>
+          <h4 class="time">June, 2022</h4>
+          <button class="btn btn-secondary btn-to-post">To Blog Post</button>
+        </article>
+        <article class="card" id="stellenbosch">
+          <img
+            class="card-image"
+            src="/images/stellenbosch-small.jpg"
+            srcset="
+              /images/stellenbosch-small.jpg  320w,
+              /images/stellenbosch-medium.jpg 800w
+            "
+            alt="Stellenbosch landscape"
+          />
+          <h3 class="location">Stellenbosch, South Africe</h3>
+          <h4 class="time">September, 2019</h4>
+          <button class="btn btn-secondary btn-to-post">To Blog Post</button>
+        </article>
+        <article class="card" id="new-york">
+          <img
+            class="card-image"
+            src="/images/new-york-small.jpg"
+            srcset="
+              /images/new-york-small.jpg  320w,
+              /images/new-york-medium.jpg 800w
+            "
+            alt="A top view of new york"
+          />
+          <h3 class="location">New York, New York, USA</h3>
+          <h4 class="time">March, 2018</h4>
+          <button class="btn btn-secondary btn-to-post">To Blog Post</button>
+        </article>
+        <article class="card" id="istanbul">
+          <img
+            class="card-image"
+            src="/images/istanbul-small.jpg"
+            srcset="
+              /images/istanbul-small.jpg  320w,
+              /images/istanbul-medium.jpg 800w
+            "
+            alt="istanbul landscape"
+          />
+          <h3 class="location">Istanbul, Turkey</h3>
+          <h4 class="time">March, 2019</h4>
+          <button class="btn btn-secondary btn-to-post">To Blog Post</button>
+        </article>
+        <article class="card" id="sapa">
+          <img
+            class="card-image"
+            src="/images/sapa-small.jpg"
+            srcset="/images/sapa-small.jpg 320w, /images/sapa-medium.jpg 800w"
+            alt="rice fields in sapa"
+          />
+          <h3 class="location">Sapa, Vietnam</h3>
+          <h4 class="time">October, 2016</h4>
+          <button class="btn btn-secondary btn-to-post">To Blog Post</button>
+        </article>
+        <article class="card" id="lisbon">
+          <img
+            class="card-image"
+            src="/images/lisbon-small.jpg"
+            srcset="
+              /images/lisbon-small.jpg  320w,
+              /images/lisbon-medium.jpg 800w
+            "
+            alt="lisbon tower"
+          />
+          <h3 class="location">lisbon, Potrugal</h3>
+          <h4 class="time">November 2021</h4>
+          <button class="btn btn-secondary btn-to-post">To Blog Post</button>
+        </article>
       </section>
-      <section class="about-me" id="about"></section>
+      <section class="about-me" id="about">
+        <h2 class="about-me-heading">About Me</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sit
+          dolore maxime quae facere praesentium excepturi debitis totam sunt
+          corrupti autem unde ut nisi alias placeat inventore, saepe error? In
+          quod tempore aliquam, reiciendis minus dolorum blanditiis quis sunt
+          perferendis quia et animi, aspernatur laboriosam quasi officiis
+          deleniti. temporibus inventore enim aliquid illum facilis consequatur
+          asperiores saepe adipisci aut error ipsum, similique repudiandae
+          tempora veritatis quisquam. Enim incidunt nam velit repudiandae
+          nesciunt laboriosam modi! Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Eveniet, ipsa. Iusto quae ipsa neque hic quidem iure
+          officia tempore laboriosam maxime esse consequuntur facere perferendis
+          assumenda, dolorem dolor a. Nemo consequatur, nihil ab eligendi labore
+          voluptas fugiat repellat?
+        </p>
+      </section>
       <section class="contact-me" id="contact"></section>
     </main>
     <footer>
