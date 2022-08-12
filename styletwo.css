@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-
 /* 
 colors:
 #656d4a
@@ -22,6 +21,10 @@ a:visited {
 
 section {
   margin: 3rem;
+}
+
+p::selection {
+  background-color: #c2c5aa;
 }
 
 /* BUTTONS */
@@ -277,6 +280,7 @@ aside#contact {
   max-width: 70%;
   margin: 0 auto;
 }
+
 .contact-me article {
   border-left: 8px solid #656d4a;
   border-right: 8px solid #656d4a;
@@ -342,12 +346,28 @@ footer {
     width: 100%;
   }
 
+  .blog-post h1 {
+    font-size: 3rem;
+  }
+  .blog-post h2 {
+    font-size: 2rem;
+  }
+
+  .contact-me p {
+    font-size: 0.8rem;
+  }
+  .post-info {
+    flex-wrap: wrap;
+    height: 100px;
+  }
   .card {
     width: 100%;
   }
   .contact-me article {
     max-width: 100%;
+    width: 100%;
     margin: 1rem 0;
+    display: flex;
   }
   header {
     height: 50vh;
@@ -371,5 +391,6 @@ footer {
   .btn {
     padding: 8px;
     font-size: 12px;
+    margin-top: 0.5rem;
   }
 }
