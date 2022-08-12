@@ -4,10 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styletwo.css" />
     <title>Luxembourg</title>
   </head>
+
   <body>
+    <nav>
+      <h3><a href="index.html">TL</a></h3>
+      <ul class="navbar">
+        <li>
+          <a href="/index.html#blog">Blog</a>
+        </li>
+        <li>
+          <a href="#about">About Me</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+      <button class="btn btn-primary">
+        <a href="#sign-up">Sign Up</a>
+      </button>
+    </nav>
     <!-- add navbar and footer to all pages -->
     <!-- use figure with img and figcaption -->
     <!--change resource with media quary and always use alt="" -->
@@ -15,30 +33,101 @@
     <!-- add rels to links, maybe target="_blank" -->
     <!-- add max width and responsive image size  -->
     <!--  -->
-    <h1 class="destination">Luxembourg</h1>
-    <h2>June 2022</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, iste
-      nihil excepturi mollitia quas veniam. Consectetur eligendi ullam incidunt
-      reprehenderit sint veniam possimus fugiat deleniti molestiae, perferendis
-      tenetur! In repellat delectus sit rem nostrum eos assumenda nobis, a minus
-      qui doloremque enim rerum nisi. Veritatis excepturi optio ea in vitae hic
-      quasi ipsa fuga rerum possimus iure nobis cumque ut debitis corrupti,
-      beatae soluta voluptatem nihil ratione rem natus perferendis accusantium
-      sequi repellat. Impedit perspiciatis nihil tempore omnis voluptate
-      adipisci molestiae dicta in optio suscipit laborum iste facilis magnam
-      minima commodi, deserunt praesentium. Delectus voluptates beatae, debitis
-      voluptatum eveniet qui!
-    </p>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, ad
-      labore eligendi deserunt mollitia aut deleniti facere magnam doloribus.
-      Reprehenderit distinctio doloribus doloremque tempore dolores earum modi
-      autem, fugit blanditiis eveniet recusandae velit non aliquid dolorem nemo
-      ipsum? Eum, facere, sed vel eius provident quaerat porro repudiandae
-      voluptatum harum iusto atque? Magni voluptatum sit blanditiis sequi
-      placeat nulla distinctio modi ut. Aperiam impedit nobis quod eos illo, ex
-      esse aliquam temporibus, maiores vitae sequi quam!
-    </p>
+    <main class="post-page">
+      <section class="blog-post">
+        <picture>
+          <img
+            srcset="
+              /images/vianden-small.jpg   480w,
+              /images/vianden-medium.jpg  800w,
+              /images/vianden-large.jpg  1200w
+            "
+            sizes="(max-width: 1200px) 480px,
+         800px"
+            src="/images/feature-medium.jpg"
+            alt="Elva dressed as a fairy"
+          />
+        </picture>
+        <h1 class="destination heading">Luxembourg</h1>
+        <h2 class="subheading">And the castle on the hill</h2>
+        <h4>July 20th 2022</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, iste
+          nihil excepturi mollitia quas veniam. Consectetur eligendi ullam
+          incidunt reprehenderit sint veniam possimus fugiat deleniti molestiae,
+          perferendis tenetur! In repellat delectus sit rem nostrum eos
+          assumenda nobis, a minus qui doloremque enim rerum nisi. Veritatis
+          excepturi optio ea in vitae hic quasi ipsa fuga rerum possimus iure
+          nobis cumque ut debitis corrupti, beatae soluta voluptatem nihil
+          ratione rem natus perferendis accusantium sequi repellat. Impedit
+          perspiciatis nihil tempore omnis voluptate adipisci molestiae dicta in
+          optio suscipit laborum iste facilis magnam minima commodi, deserunt
+          praesentium. Delectus voluptates beatae, debitis voluptatum eveniet
+          qui!
+        </p>
+        <p>
+          Consectetur adipisicing elit. Minima, ad labore eligendi deserunt
+          mollitia aut deleniti facere magnam doloribus. Reprehenderit
+          distinctio doloribus doloremque tempore dolores earum modi autem,
+          fugit blanditiis eveniet recusandae velit non aliquid dolorem nemo
+          ipsum? Eum, facere, sed vel eius provident quaerat porro repudiandae
+          voluptatum harum iusto atque? Magni voluptatum sit blanditiis sequi
+          placeat nulla distinctio modi ut. Aperiam impedit nobis quod eos illo,
+          ex esse aliquam temporibus, maiores vitae sequi quam!
+        </p>
+        <p>
+          Amet consectetur adipisicing elit. Cumque deleniti libero cupiditate
+          possimus. Ratione, tempora sapiente non sint, inventore illum
+          voluptates eveniet consequuntur odit unde eum corrupti numquam
+          delectus exercitationem laudantium architecto odio accusantium nobis
+          porro! Architecto in nam, voluptatem iusto voluptatibus aspernatur at
+          deserunt inventore natus, omnis accusantium. Velit ipsa exercitationem
+          accusantium possimus voluptatibus iste itaque ut suscipit temporibus
+          quisquam quae aut delectus libero perspiciatis nisi, incidunt alias
+          magnam asperiores, labore reiciendis commodi? Repudiandae dolorem,
+          consectetur sunt cumque, vel ratione corrupti facilis sequi molestias
+          maxime quod modi, quidem laborum! Ipsam fugit quidem nobis culpa quasi
+          esse quibusdam cum repudiandae dolorum obcaecati dolores ab
+          voluptatem, commodi consequuntur nihil. Asperiores tenetur quibusdam
+          dolor qui eaque, porro adipisci odit animi vero nisi tempora veniam
+          debitis dolorum quaerat error sunt, sit, accusantium delectus culpa
+          aliquid maxime? Molestiae, exercitationem minima consectetur eos,
+          pariatur enim praesentium aspernatur numquam error corporis similique
+          sunt, nihil excepturi rerum.
+        </p>
+        <button class="share">
+          <img src="/images/facebook.svg" alt="" />
+          <img src="/images/twitter.svg" alt="" />
+          <img src="/images/linkedin.png" alt="" />
+        </button>
+      </section>
+      <aside class="about-me">
+        <img
+          id="profile-photo"
+          src="/images/vianden-me.jpg"
+          alt="a photo of me at graduation"
+        />
+        <h2 class="about-heading">The Author</h2>
+        <p class="about-name">Liz Czarny</p>
+        <p class="about-name">Web Development student</p>
+        <p class="about-name">Masterschool</p>
+        <p class="about-text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi
+          reprehenderit porro assumenda rerum alias. Id unde hic cum corporis
+          laborum sit qui rem possimus sunt! Quam cupiditate ut quo, magnam
+          doloribus, itaque in dolorum ipsam, sapiente expedita facilis sed.
+          Repellendus alias asperiores provident quo quas?
+        </p>
+      </aside>
+      <aside class="contact-me">
+        <h2>Stay in touch!</h2>
+        <p></p>
+      </aside>
+    </main>
+    <footer id="footer">
+      <h3>Travel with Liz</h3>
+      <h4>Explore the world with me</h4>
+      <p>&copy; Elizabeth Czarny 2022 for Masterschool</p>
+    </footer>
   </body>
 </html>

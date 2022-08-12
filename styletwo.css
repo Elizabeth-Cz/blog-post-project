@@ -1,17 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-:root {
-  --font-primary: "Noticia Text", serif;
-}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Noticia Text", serif;
 }
 
-body {
-  font-family: var(--font-primary);
+p {
+  margin-bottom: 15px;
 }
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* BUTTONS */
 
 .btn {
@@ -27,34 +32,34 @@ body {
 }
 
 .btn-primary {
-  border: 4px solid #fff;
-  background: none;
-  color: #fff;
-  font-weight: 600;
+  border: 3px solid #656d4a;
+  color: #656d4a;
+  background: #fff;
 }
 
 .btn-primary:hover {
-  background-color: #fff;
-  border-color: #656d4a;
-  color: #656d4a;
+  border: 3px solid #fff;
+  color: #fff;
+  background: #a4ac86;
 }
 
 .btn-secondary {
   margin-top: auto;
   background-color: #a4ac86;
-  color: white;
+  color: #fff;
 }
 
 .btn-secondary:hover {
   background-color: #656d4a;
 }
 
-.btn-discover {
-  margin: 11% auto;
+a:hover {
+  color: #656d4a;
 }
 
-/* HEADER */
+/* BLOG HOME PAGE */
 
+/* HEADER */
 header {
   height: 100vh;
   background: linear-gradient(
@@ -65,15 +70,16 @@ header {
     url("./images/feature-large.jpg");
   background-size: cover;
   color: #fff;
+  /* backdrop-filter: blur(15px); */
 }
 
 nav {
   padding: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 30vh;
-  font-family: "Noticia Text", serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .navbar {
@@ -84,16 +90,7 @@ nav {
   justify-content: space-between;
 }
 
-a,
-a:visited {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:hover {
-  color: #656d4a;
-}
-
+/* shorthand font property doesn't work with inherit for font-family */
 .heading {
   font: 600 4rem "Noticia Text", serif;
 }
@@ -106,17 +103,26 @@ a:hover {
   text-align: center;
 }
 
+/* HEADER */
+
 /* MAIN */
-/* CARDS SECTION */
-main {
-  width: 70%;
+.homepage,
+.post-page {
+  width: 80%;
+  max-width: 1200px;
   margin: 35px auto;
 }
+
+header .heading {
+  margin-top: 30vh;
+}
+
+/* CARDS SECTION */
 
 .posts {
   display: grid;
   grid: repeat(3, 0.5fr) / repeat(3, 1fr);
-  gap: 15px;
+  gap: 25px;
   margin: 15px;
 }
 
@@ -124,6 +130,7 @@ main {
   object-fit: cover;
   max-width: 100%;
   border-radius: 15px;
+  flex-grow: 1;
 }
 
 .card {
@@ -134,6 +141,7 @@ main {
   justify-content: space-between;
   align-items: stretch;
   box-shadow: rgb(0 0 0 / 30%) 0px 5px 8px 0px;
+  transition: transform 500ms;
 }
 
 .card:nth-child(3) {
@@ -150,20 +158,104 @@ main {
   margin-bottom: 2rem;
 }
 
-.about-me {
-  margin: 5rem auto;
-  width: 80%;
-  letter-spacing: 1px;
-}
-
-.about-me p {
-  margin: 15px 0;
-  border-radius: 15px;
-  padding: 2rem;
-  background-color: #a4ac86;
-  column-count: 2;
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #656d4a;
   color: #fff;
 }
-.about-me p::first-letter {
-  font-size: 2rem;
+h4 {
+  font: 400 1rem "Dancing Script", cursive;
+  margin-bottom: 10px;
+}
+/* POST PAGE */
+
+.post-page {
+  display: grid;
+  grid: repeat(2, 1fr) / 3fr 1fr;
+  gap: 20px;
+}
+
+/* BLOG POST */
+.blog-post {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-row: span 2;
+}
+
+.blog-post img {
+  width: 100%;
+}
+
+.blog-post p::first-letter {
+  font-size: 1.5rem;
+}
+
+/* about me */
+.about-me img {
+  position: absolute;
+  top: -60px;
+  left: 15%;
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 6px solid #a4ac86;
+}
+
+.about-me {
+  margin: 60px 0 0;
+  color: #a4ac86;
+  padding: 150px 40px 40px;
+  width: 300px;
+  position: relative;
+  align-self: center;
+  border: 3px solid #a4ac86;
+  border-radius: 15px;
+}
+
+.about-heading {
+  padding-bottom: 35px;
+}
+
+@media only screen and (max-width: 768px) {
+  .posts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .homepage {
+    /* margin: 0; */
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  header {
+    height: 50vh;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    height: 40%;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  nav h3 {
+    display: none;
+  }
+  nav .btn {
+    order: 2;
+    /* margin: 0 auto; */
+  }
+  .btn {
+    padding: 8px;
+    font-size: 12px;
+  }
 }
