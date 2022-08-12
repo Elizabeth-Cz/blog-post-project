@@ -16,7 +16,7 @@ colors:
 a,
 a:visited {
   text-decoration: none;
-  color: inherit;
+  text-align: center;
 }
 
 section {
@@ -61,6 +61,7 @@ p::selection {
 
 .btn-secondary:hover {
   background-color: #656d4a;
+  color: #fff;
 }
 
 a:hover {
@@ -90,6 +91,10 @@ nav {
   max-width: 1200px;
   margin: 0 auto;
   align-items: center;
+  color: #fff;
+}
+nav a {
+  color: #fff;
 }
 ul {
   list-style: none;
@@ -183,6 +188,10 @@ header .heading {
 }
 
 /* BLOG POST */
+
+.navbar-post-page {
+  background-color: #c2c5aa;
+}
 .blog-post {
   width: 100%;
   max-width: 1200px;
@@ -227,6 +236,7 @@ header .heading {
 
 #back {
   padding-left: 2rem;
+  color: #656d4a;
 }
 
 .blog-post img {
