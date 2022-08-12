@@ -1,107 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styletwo.css" />
+    <script
+      src="https://kit.fontawesome.com/58a488c3c5.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Travel with Liz</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styletwo.css" />
-  <title>Travel with Liz</title>
-</head>
+  <body>
+    <header>
+      <nav>
+        <h3>TL</h3>
+        <ul class="navbar">
+          <li>
+            <a href="#blog">Blog</a>
+          </li>
+          <li>
+            <a href="#about">About Me</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <button class="btn btn-primary">
+          <a href="#sign-up">Sign Up</a>
+        </button>
+      </nav>
 
-<body>
-  <header>
-    <nav>
-      <h3>TL</h3>
-      <ul class="navbar">
-        <li>
-          <a href="#blog">Blog</a>
-        </li>
-        <li>
-          <a href="#about">About Me</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-      <button class="btn btn-primary">
-        <a href="#sign-up">Sign Up</a>
-      </button>
-    </nav>
-    <h1 class="heading">
-      Travel
-      <span>with</span>
-      Liz
-    </h1>
-    <h2 class="subheading">Explore the world with me</h2>
-  </header>
-  <main class="homepage">
-    <section class="posts" id="blog">
-      <article class="card" id="vianden">
-        <h2 class="main-latest">My Latest trip</h2>
-        <img class="card-image" src="/images/vianden-small.jpg" srcset="
+      <h1 class="heading">
+        Travel
+        <span>with</span>
+        Liz
+      </h1>
+      <h2 class="subheading">Explore the world with me</h2>
+    </header>
+    <main class="homepage">
+      <section class="posts" id="blog">
+        <article class="card" id="vianden">
+          <h2 id="latest">My Latest trip</h2>
+          <img
+            src="/images/vianden-small.jpg"
+            srcset="
               /images/vianden-small.jpg  320w,
               /images/vianden-medium.jpg 800w
-            " alt="the vianden castle" />
-        <h3 class="location">Vianden, Luxembourg</h3>
-        <h4 class="time">June, 2022</h4>
-        <button class="btn btn-secondary btn-to-post">
-          <a href="index.html">To Blog Post</a>
-        </button>
-      </article>
-      <article class="card" id="stellenbosch">
-        <img class="card-image" src="/images/stellenbosch-small.jpg" srcset="
+            "
+            alt="the vianden castle"
+          />
+          <h3>Vianden, Luxembourg</h3>
+          <h4>June, 2022</h4>
+          <button class="btn btn-secondary">
+            <a href="blog-post.html">To Blog Post</a>
+          </button>
+        </article>
+        <article class="card" id="stellenbosch">
+          <img
+            src="/images/stellenbosch-small.jpg"
+            srcset="
               /images/stellenbosch-small.jpg  320w,
               /images/stellenbosch-medium.jpg 800w
-            " alt="Stellenbosch landscape" />
-        <h3 class="location">Stellenbosch, South Africe</h3>
-        <h4 class="time">September, 2019</h4>
-        <button class="btn btn-secondary btn-to-post">To Blog Post</button>
-      </article>
-      <article class="card" id="new-york">
-        <img class="card-image" src="/images/new-york-small.jpg" srcset="
+            "
+            alt="Stellenbosch landscape"
+          />
+          <h3>Stellenbosch, South Africe</h3>
+          <h4>September, 2019</h4>
+          <button class="btn btn-secondary">To Blog Post</button>
+        </article>
+        <article class="card" id="new-york">
+          <img
+            src="/images/new-york-small.jpg"
+            srcset="
               /images/new-york-small.jpg  320w,
               /images/new-york-medium.jpg 800w
-            " alt="A top view of new york" />
-        <h3 class="location">New York, New York, USA</h3>
-        <h4 class="time">March, 2018</h4>
-        <button class="btn btn-secondary btn-to-post">To Blog Post</button>
-      </article>
-      <article class="card" id="istanbul">
-        <img class="card-image" src="/images/istanbul-small.jpg" srcset="
+            "
+            alt="A top view of new york"
+          />
+          <h3>New York, New York, USA</h3>
+          <h4>March, 2018</h4>
+          <button class="btn btn-secondary">To Blog Post</button>
+        </article>
+        <article class="card" id="istanbul">
+          <img
+            src="/images/istanbul-small.jpg"
+            srcset="
               /images/istanbul-small.jpg  320w,
               /images/istanbul-medium.jpg 800w
-            " alt="istanbul landscape" />
-        <h3 class="location">Istanbul, Turkey</h3>
-        <h4 class="time">March, 2019</h4>
-        <button class="btn btn-secondary btn-to-post">To Blog Post</button>
-      </article>
-      <article class="card" id="sapa">
-        <img class="card-image" src="/images/sapa-small.jpg"
-          srcset="/images/sapa-small.jpg 320w, /images/sapa-medium.jpg 800w" alt="rice fields in sapa" />
-        <h3 class="location">Sapa, Vietnam</h3>
-        <h4 class="time">October, 2016</h4>
-        <button class="btn btn-secondary btn-to-post">To Blog Post</button>
-      </article>
-      <article class="card" id="lisbon">
-        <img class="card-image" src="/images/lisbon-small.jpg" srcset="
+            "
+            alt="istanbul landscape"
+          />
+          <h3>Istanbul, Turkey</h3>
+          <h4>March, 2019</h4>
+          <button class="btn btn-secondary">To Blog Post</button>
+        </article>
+        <article class="card" id="sapa">
+          <img
+            src="/images/sapa-small.jpg"
+            srcset="/images/sapa-small.jpg 320w, /images/sapa-medium.jpg 800w"
+            alt="rice fields in sapa"
+          />
+          <h3>Sapa, Vietnam</h3>
+          <h4>October, 2016</h4>
+          <button class="btn btn-secondary">To Blog Post</button>
+        </article>
+        <article class="card" id="lisbon">
+          <img
+            src="/images/lisbon-small.jpg"
+            srcset="
               /images/lisbon-small.jpg  320w,
               /images/lisbon-medium.jpg 800w
-            " alt="lisbon tower" />
-        <h3 class="location">lisbon, Potrugal</h3>
-        <h4 class="time">November 2021</h4>
-        <button class="btn btn-secondary btn-to-post">To Blog Post</button>
-      </article>
-    </section>
-    <section class="contact-me" id="contact">
-      <h2 class="subheading"></h2>
-    </section>
-  </main>
-  <footer id="footer">
-    <h3>Travel with Liz</h3>
-    <h4>Explore the world with me</h4>
-    <p>&copy; Elizabeth Czarny 2022 for Masterschool</p>
-  </footer>
-</body>
-
+            "
+            alt="lisbon tower"
+          />
+          <h3>lisbon, Potrugal</h3>
+          <h4>November 2021</h4>
+          <button class="btn btn-secondary">To Blog Post</button>
+        </article>
+      </section>
+      <section class="about-me" id="about">
+        <h2>About Me</h2>
+        <p class="about-text">
+          Hi! my name is Elizabeth, but I ususally go by Liz. Until I was about
+          20 I didn't travel so much, we went to see relatives in canada one in
+          a while but those trips were all about family meals and some
+          shopping(not that I'm complaining!)
+        </p>
+        <p>
+          My first indepentent trip was to Italy, I was a 20 year old soldier
+          and I saved up all of my money and vacation days to go on a two week
+          trip to Italy with a friend and I was beyond excited. Italy was
+          mind-blowing, we went to the most incredible museums, ate the best
+          Italian food and had some great wine(well, great house wine, we were
+          still on a pretty tight budget), and the people were the so friendly.
+        </p>
+        <p>
+          Fast forwart to today, I can't stress how grateful I am that I had
+          these opportunities to travel as much as I did, and I hope you'll like
+          my point of view on traveling.
+          <br />Hope to see you here again soon!
+        </p>
+      </section>
+      <section class="contact-me" id="contact">
+        <h2>Contact Me!</h2>
+        <article>
+          <i class="fa-solid fa-location-dot"></i>
+          <p>Address <br />Museumstraat 1, Amsterdam</p>
+        </article>
+        <article>
+          <i class="fa-solid fa-phone"></i>
+          <p>Call me <br />+31 06 304 70539</p>
+        </article>
+        <article>
+          <i class="fa-solid fa-envelope"></i>
+          <p>Write me <br />liz.cz91@campus.masterschool.com</p>
+        </article>
+        <ul class="social-media">
+          <li><i class="fa-brands fa-square-facebook"></i></li>
+          <li><i class="fa-brands fa-square-instagram"></i></li>
+          <li><i class="fa-brands fa-square-twitter"></i></li>
+          <li><i class="fa-brands fa-square-github"></i></li>
+          <li><i class="fa-brands fa-linkedin"></i></li>
+        </ul>
+      </section>
+    </main>
+    <footer id="footer">
+      <h3>Travel with Liz</h3>
+      <h4>Explore the world with me</h4>
+      <p>&copy; Elizabeth Czarny 2022 for Masterschool</p>
+    </footer>
+  </body>
 </html>

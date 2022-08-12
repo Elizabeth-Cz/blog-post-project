@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styletwo.css" />
+    <script
+      src="https://kit.fontawesome.com/58a488c3c5.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Luxembourg</title>
   </head>
 
@@ -26,6 +30,7 @@
         <a href="#sign-up">Sign Up</a>
       </button>
     </nav>
+    <a href="index.html" id="back">&larr; Back to blog</a>
     <!-- add navbar and footer to all pages -->
     <!-- use figure with img and figcaption -->
     <!--change resource with media quary and always use alt="" -->
@@ -48,9 +53,22 @@
             alt="Elva dressed as a fairy"
           />
         </picture>
-        <h1 class="destination heading">Luxembourg</h1>
+        <h1 class="destination heading">Vianden, Luxembourg</h1>
         <h2 class="subheading">And the castle on the hill</h2>
-        <h4>July 20th 2022</h4>
+        <div class="post-info">
+          <img
+            src="https://scontent-ams4-1.xx.fbcdn.net/v/t1.6435-9/46500934_10156219012804620_1771591902710202368_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=n96sjVZDBXsAX8H9ZFF&_nc_ht=scontent-ams4-1.xx&oh=00_AT-4Yo-VlQYDkVMB0H1MAut2ntRwN7jElREQCPr6Sq2NZg&oe=631A431D"
+            alt=""
+          />
+          <p>Elizabeth Czarny</p>
+          <p>July 20th 2022</p>
+          <button class="btn btn-secondary">
+            Share on:
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </button>
+        </div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, iste
           nihil excepturi mollitia quas veniam. Consectetur eligendi ullam
@@ -65,6 +83,8 @@
           praesentium. Delectus voluptates beatae, debitis voluptatum eveniet
           qui!
         </p>
+        <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ex quos, 
+          ab placeat similique veniam minus repellendus. Libero, nemo debitis?</p>
         <p>
           Consectetur adipisicing elit. Minima, ad labore eligendi deserunt
           mollitia aut deleniti facere magnam doloribus. Reprehenderit
@@ -95,33 +115,52 @@
           pariatur enim praesentium aspernatur numquam error corporis similique
           sunt, nihil excepturi rerum.
         </p>
-        <button class="share">
           <img src="/images/facebook.svg" alt="" />
           <img src="/images/twitter.svg" alt="" />
           <img src="/images/linkedin.png" alt="" />
         </button>
       </section>
       <aside class="about-me">
-        <img
-          id="profile-photo"
-          src="/images/vianden-me.jpg"
-          alt="a photo of me at graduation"
-        />
-        <h2 class="about-heading">The Author</h2>
-        <p class="about-name">Liz Czarny</p>
-        <p class="about-name">Web Development student</p>
-        <p class="about-name">Masterschool</p>
-        <p class="about-text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi
-          reprehenderit porro assumenda rerum alias. Id unde hic cum corporis
-          laborum sit qui rem possimus sunt! Quam cupiditate ut quo, magnam
-          doloribus, itaque in dolorum ipsam, sapiente expedita facilis sed.
-          Repellendus alias asperiores provident quo quas?
+        <h2>About The Author</h2>
+        <p>Liz Czarny</p>
+        <p>Web Development student</p>
+        <p>Masterschool</p>
+        <p>
+          My name is Liz, and I moved to the Netherlands one year ago, after completing a four year Bachelor of design degree and working as an interior and kitchen designer for another few years. Shortly after moving I decided to pursue a career as a front-end developer, and I've been on a learning journey ever since.
+
         </p>
+        <figure>
+          <img
+            src="https://scontent-ams2-1.xx.fbcdn.net/v/t31.18172-8/14708083_10154197468664620_7594032716484678421_o.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=PnJ0AIVM88EAX_UnUNR&_nc_ht=scontent-ams2-1.xx&oh=00_AT8d7sl2WW5ryKpPMYepR_XEidj0FknTboLsCb-DwwOKEQ&oe=631B12F7"
+            alt="a photo of me in Vietnam"
+          />
+          <figcaption>Me, Vietnam, 2016</figcaption>
+        </figure>
       </aside>
-      <aside class="contact-me">
-        <h2>Stay in touch!</h2>
-        <p></p>
+      <aside class="contact-me" id="contact">
+        <h2>Contact Me</h2>
+        <article>
+          <i class="fa-solid fa-location-dot"></i>
+          <p>Address <br />Museumstraat 1, Amsterdam</p>
+        </article>
+        <article>
+          <i class="fa-solid fa-phone"></i>
+          <p>Call me <br />+31 06 304 70539</p>
+        </article>
+        <article>
+          <i class="fa-solid fa-envelope"></i>
+          <p>Write me <br />liz.cz91@campus.masterschool.com</p>
+        </article>
+      </aside>
+      <aside class="follow-me">
+        <h2>Follow me around</h2>
+        <ul class="social-media">
+          <li><i class="fa-brands fa-square-facebook"></i></li>
+          <li><i class="fa-brands fa-square-instagram"></i></li>
+          <li><i class="fa-brands fa-square-twitter"></i></li>
+          <li><i class="fa-brands fa-square-github"></i></li>
+          <li><i class="fa-brands fa-linkedin"></i></li>
+        </ul>
       </aside>
     </main>
     <footer id="footer">
