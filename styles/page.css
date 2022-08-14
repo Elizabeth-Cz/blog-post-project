@@ -1,0 +1,51 @@
+.page-nav a,
+#logo {
+  color: #656d4a;
+}
+
+.page-nav .btn-primary {
+  border: 2px solid #656d4a;
+}
+
+.post-content {
+  padding: 1rem;
+}
+
+.post-content h5 {
+  font-size: 2rem;
+}
+
+p a {
+  color: #656d4a;
+  text-decoration: underline;
+}
+.post-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post-info p {
+  margin: 0;
+}
+
+.post-info img {
+  width: 32px;
+  border-radius: 100%;
+}
+
+.btn-share {
+  border: 1px solid #a4ac86;
+  color: #a4ac86;
+  margin-top: 1rem;
+}
+
+.btn-share .fa-brands {
+  font-size: 1rem;
+}
+
+aside.about-me,
+aside.contact-me {
+  border-top: 2px solid #a4ac86;
+}
