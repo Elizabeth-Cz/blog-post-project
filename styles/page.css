@@ -11,6 +11,10 @@
   padding: 1rem;
 }
 
+picture img {
+  width: 100%;
+}
+
 .post-content h5 {
   font-size: 2rem;
 }
@@ -48,4 +52,16 @@ p a {
 aside.about-me,
 aside.contact-me {
   border-top: 2px solid #a4ac86;
+}
+
+.post-content li {
+  margin-left: 4rem;
+}
+
+.post-content li::before {
+  content: "\2022";
+  color: #a4ac86;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
