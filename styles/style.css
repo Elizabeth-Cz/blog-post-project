@@ -111,7 +111,7 @@ header {
       rgba(164, 172, 134, 0.6),
       rgba(164, 152, 134, 0.6)
     ),
-    url("/images/feature-small.jpg");
+    url("./images/feature-small.jpg");
   background-size: cover;
   color: #fff;
   text-align: center;
@@ -187,7 +187,7 @@ footer {
         rgba(164, 172, 134, 0.6),
         rgba(164, 152, 134, 0.6)
       ),
-      url("/images/feature-medium.jpg");
+      url("./images/feature-medium.jpg");
     background-size: cover;
   }
 
@@ -250,7 +250,7 @@ footer {
         rgba(164, 172, 134, 0.6),
         rgba(164, 152, 134, 0.6)
       ),
-      url("/images/feature-large.jpg");
+      url("./images/feature-large.jpg");
     background-size: cover;
   }
 
