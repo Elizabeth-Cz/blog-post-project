@@ -111,7 +111,7 @@ header {
       rgba(164, 172, 134, 0.6),
       rgba(164, 152, 134, 0.6)
     ),
-    url("/images/feature-small.jpg");
+    url("./images/feature-small.jpg");
   background-size: cover;
   color: #fff;
   text-align: center;
@@ -187,7 +187,7 @@ footer {
         rgba(164, 172, 134, 0.6),
         rgba(164, 152, 134, 0.6)
       ),
-      url("/images/feature-medium.jpg");
+      url("./images/feature-medium.jpg");
     background-size: cover;
   }
 
@@ -238,9 +238,14 @@ footer {
 }
 
 @media only screen and (min-width: 979px) {
+
   main {
     max-width: 900px;
     margin: 0 auto;
+    grid-area: main;
+  }
+  main::-webkit-scrollbar {
+    display: none;
   }
 
   header {
@@ -250,7 +255,7 @@ footer {
         rgba(164, 172, 134, 0.6),
         rgba(164, 152, 134, 0.6)
       ),
-      url("/images/feature-large.jpg");
+      url("./images/feature-large.jpg");
     background-size: cover;
   }
 
@@ -262,6 +267,10 @@ footer {
     flex-wrap: nowrap;
     max-width: 800px;
     margin: 0 auto;
+    grid-area: nav;
+  }
+  footer {
+    grid-area: footer;
   }
   nav ul {
     width: 50%;
