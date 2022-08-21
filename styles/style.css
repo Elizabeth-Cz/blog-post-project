@@ -191,7 +191,6 @@ footer {
     background-size: cover;
   }
 
-
   nav {
     flex-wrap: nowrap;
   }
@@ -239,7 +238,6 @@ footer {
 }
 
 @media only screen and (min-width: 979px) {
-
   main {
     max-width: 900px;
     margin: 0 auto;
